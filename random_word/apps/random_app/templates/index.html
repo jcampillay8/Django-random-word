@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <title>Random Word</title>
+  
+</head>
+
+  <body>
+    <div>
+      <h4>Palabra Aleatorio - ( Intento # {{request.session.contador}} )</h4>
+      <div>
+          <h2 ><small>{{word}}</small></h2>
+          <a href="/new_word"><button style="background-color: orange;">generate</button></a>
+          <a href="/random_word/reset"><button style="background-color: blue;">reset</button></a>
+      </div>
+    </div>
+  
+  </body>
+</html>
